@@ -38,7 +38,7 @@ def number():
     num = input (self.b+ "Enter Numbers => " )
 
     with urllib.request.urlopen (
-            "http://146.148.112.105/caller/index.php/UserManagement/search_number?number=" + num + "&country_code=SA" ) as url:
+            "http://146.148.112.105/caller/index.php/UserManagement/search_number?number=" + num + "&country_code=SY" ) as url:
         data = json.loads ( url.read ( ).decode ( ) )
         print ( data )
         with open ( 'data.txt' , 'a' ) as name:
